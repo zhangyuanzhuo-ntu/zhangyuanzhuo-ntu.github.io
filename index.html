@@ -1,0 +1,314 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Yuanzhuo Zhang | Academic Homepage</title>
+
+  <style>
+    body {
+      font-family: Georgia, "Times New Roman", serif;
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+      line-height: 1.6;
+      color: #000;
+    }
+
+    h1 { font-size: 32px; }
+
+    h2 {
+      border-bottom: 1px solid #aaa;
+      padding-bottom: 4px;
+      margin-top: 40px;
+    }
+
+    a {
+      color: #0645ad;
+      text-decoration: none;
+    }
+
+    a:hover { text-decoration: underline; }
+
+    .header {
+      display: flex;
+      gap: 30px;
+      align-items: flex-start;
+    }
+
+    .photo {
+      width: 180px;
+      flex: 0 0 180px;
+    }
+
+    .photo img {
+      width: 100%;
+      border-radius: 4px;
+    }
+
+    .nav {
+      margin: 15px 0;
+    }
+
+    .nav a {
+      margin-right: 10px;
+      font-weight: bold;
+    }
+
+    /* Publication / project cards */
+    .work-item {
+      display: flex;
+      gap: 24px;
+      align-items: flex-start;
+      margin: 28px 0;
+    }
+
+    .work-media {
+      width: 225px;
+      height: 128px;
+      flex: 0 0 225px;
+      overflow: hidden;
+      background: #f2f2f2;
+    }
+
+    .work-media img,
+    .work-media video {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    .work-info {
+      flex: 1;
+      line-height: 1.35;
+    }
+
+    .work-title {
+      font-weight: bold;
+      font-size: 18px;
+      margin-bottom: 4px;
+    }
+
+    .work-meta {
+      font-style: italic;
+      margin-top: 8px;
+    }
+
+    .work-links {
+      margin-top: 2px;
+    }
+
+    .work-desc {
+      font-style: italic;
+      margin-top: 7px;
+    }
+
+    .placeholder {
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #777;
+      text-align: center;
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+    }
+
+    @media (max-width: 700px) {
+      body { padding: 18px; }
+
+      .header,
+      .work-item {
+        flex-direction: column;
+      }
+
+      .work-media {
+        width: 100%;
+        height: auto;
+        aspect-ratio: 16 / 9;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<div class="header">
+  <div class="photo">
+    <img src="photo.jpg" alt="Yuanzhuo Zhang">
+  </div>
+
+  <div>
+    <h1>Yuanzhuo Zhang (张元卓)</h1>
+
+    <p>
+      Researcher / Robotics & Embodied AI<br>
+      Reinforcement Learning · Control · World Models
+    </p>
+
+    <div class="nav">
+      <a href="#bio">Biography</a> |
+      <a href="#research">Research</a> |
+      <a href="#education">Education</a> |
+      <a href="#publications">Publications</a> |
+      <a href="#projects">Projects</a>
+    </div>
+
+    <p>
+      Email: YUANZHUO002@e.ntu.edu.sg <br>
+      GitHub:
+      <a href="https://github.com/zhangyuanzhuo-ntu" target="_blank">
+        zhangyuanzhuo-ntu
+      </a>
+    </p>
+  </div>
+</div>
+
+<h2 id="bio">Biography</h2>
+<p>
+  I am an incoming Ph.D. student (Spring 2027) at the School of Mechanical and Aerospace Engineering (MAE),
+  Nanyang Technological University (NTU), Singapore. My research focuses on embodied intelligence and robot learning,
+  particularly reinforcement learning and control for legged robots and mobile manipulation.
+</p>
+
+<h2 id="research">Research Interests</h2>
+<ul>
+  <li>Reinforcement Learning for Robotics</li>
+  <li>Embodied Intelligence & World Models</li>
+  <li>Legged Locomotion and Control</li>
+</ul>
+
+<h2 id="education">Education</h2>
+<ul>
+  <li>M.A.E., Robotics / Nanyang Technological University, Singapore</li>
+  <li>B.E., Automation, Southern University of Science and Technology</li>
+</ul>
+
+<h2 id="publications">Publications</h2>
+
+<!--
+HOW TO ADD A PUBLICATION:
+Duplicate one complete .work-item block below.
+Replace:
+1) media/image/video path
+2) title
+3) authors
+4) venue + year
+5) paper / website / video / code URLs
+6) one-sentence contribution
+-->
+
+<div class="work-item">
+  <div class="work-media">
+    <div class="placeholder">Publication image / video</div>
+  </div>
+
+  <div class="work-info">
+    <div class="work-title">Paper Title</div>
+    <div><b>Yuanzhuo Zhang</b>, Coauthor Name</div>
+
+    <div class="work-meta">Conference / Journal, Year</div>
+
+    <div class="work-links">
+      <a href="#" target="_blank">paper</a> |
+      <a href="#" target="_blank">website</a> |
+      <a href="#" target="_blank">video</a> |
+      <a href="#" target="_blank">code</a>
+    </div>
+
+    <div class="work-desc">
+      One-sentence description of the main contribution.
+    </div>
+  </div>
+</div>
+
+<h2 id="projects">Projects</h2>
+
+<div class="work-item">
+  <div class="work-media">
+    <video controls muted loop playsinline preload="metadata">
+      <source src="media/embodied_vehicle_slam.mp4" type="video/mp4">
+      Your browser does not support HTML5 video.
+    </video>
+  </div>
+
+  <div class="work-info">
+    <div class="work-title">Embodied Intelligence Vehicle SLAM Mapping</div>
+    <div><b>Yuanzhuo Zhang</b></div>
+
+    <div class="work-links">
+      <a href="https://github.com/zhangyuanzhuo-ntu" target="_blank">GitHub</a>
+    </div>
+
+    <div class="work-desc">
+      An embodied mobile-robot project for autonomous perception, mapping, localization,
+      and navigation in real-world environments.
+    </div>
+  </div>
+</div>
+
+<div class="work-item">
+  <div class="work-media">
+    <div class="placeholder">Project image / video</div>
+  </div>
+
+  <div class="work-info">
+    <div class="work-title">A Vision-Based Chess Robot</div>
+    <div><b>Yuanzhuo Zhang</b></div>
+
+    <div class="work-links">
+      <a href="#" target="_blank">GitHub</a>
+    </div>
+
+    <div class="work-desc">
+      Vision-based robotic manipulation for automated chess perception and move execution.
+    </div>
+  </div>
+</div>
+
+<div class="work-item">
+  <div class="work-media">
+    <div class="placeholder">Project image / video</div>
+  </div>
+
+  <div class="work-info">
+    <div class="work-title">
+      Execution of Urban Sewer Cleaning Tasks by a Quadruped Platform Robotic Arm Based on Diffusion Models
+    </div>
+
+    <div><b>Yuanzhuo Zhang</b></div>
+
+    <div class="work-links">
+      <a href="#" target="_blank">paper</a> |
+      <a href="#" target="_blank">GitHub</a>
+    </div>
+
+    <div class="work-desc">
+      A quadruped-manipulation system that combines mobile robotic operation with diffusion-model-based task execution.
+    </div>
+  </div>
+</div>
+
+<div class="work-item">
+  <div class="work-media">
+    <div class="placeholder">Project image / video</div>
+  </div>
+
+  <div class="work-info">
+    <div class="work-title">Mobile Manipulation System</div>
+    <div><b>Yuanzhuo Zhang</b></div>
+
+    <div class="work-links">
+      <a href="#" target="_blank">GitHub</a>
+    </div>
+
+    <div class="work-desc">
+      A mobile manipulation platform integrating perception, navigation, planning, and robotic manipulation.
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
